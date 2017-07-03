@@ -1,0 +1,201 @@
+// sprites.png
+
+$spt-close-name: 'spt-close';
+$spt-close-x: 27px;
+$spt-close-y: 27px;
+$spt-close-offset-x: -27px;
+$spt-close-offset-y: -27px;
+$spt-close-width: 18px;
+$spt-close-height: 18px;
+$spt-close-total-width: 49px;
+$spt-close-total-height: 49px;
+$spt-close-image: '../images/sprites.png';
+$spt-close: (27px, 27px, -27px, -27px, 18px, 18px, 49px, 49px, '../images/sprites.png', 'spt-close');
+$spt-error-name: 'spt-error';
+$spt-error-x: 0;
+$spt-error-y: 0;
+$spt-error-offset-x: 0;
+$spt-error-offset-y: 0;
+$spt-error-width: 22px;
+$spt-error-height: 22px;
+$spt-error-total-width: 49px;
+$spt-error-total-height: 49px;
+$spt-error-image: '../images/sprites.png';
+$spt-error: (0, 0, 0, 0, 22px, 22px, 49px, 49px, '../images/sprites.png', 'spt-error');
+$spt-pass-name: 'spt-pass';
+$spt-pass-x: 27px;
+$spt-pass-y: 0;
+$spt-pass-offset-x: -27px;
+$spt-pass-offset-y: 0;
+$spt-pass-width: 22px;
+$spt-pass-height: 22px;
+$spt-pass-total-width: 49px;
+$spt-pass-total-height: 49px;
+$spt-pass-image: '../images/sprites.png';
+$spt-pass: (27px, 0, -27px, 0, 22px, 22px, 49px, 49px, '../images/sprites.png', 'spt-pass');
+$spt-warning-name: 'spt-warning';
+$spt-warning-x: 0;
+$spt-warning-y: 27px;
+$spt-warning-offset-x: 0;
+$spt-warning-offset-y: -27px;
+$spt-warning-width: 22px;
+$spt-warning-height: 22px;
+$spt-warning-total-width: 49px;
+$spt-warning-total-height: 49px;
+$spt-warning-image: '../images/sprites.png';
+$spt-warning: (0, 27px, 0, -27px, 22px, 22px, 49px, 49px, '../images/sprites.png', 'spt-warning');
+$ssh-sprites-width: 49px;
+$ssh-sprites-height: 49px;
+$ssh-sprites-image: '../images/sprites.png';
+$ssh-sprites-sprites: ($spt-close, $spt-error, $spt-pass, $spt-warning);
+$ssh-sprites: (49px, 49px, '../images/sprites.png', $ssh-sprites-sprites);
+
+@mixin ssh-sprites {
+
+  %ssh-sprites {
+    background-image: url(nth($ssh-sprites, 3));
+  }
+
+}
+
+
+
+// sprites@2x.png
+
+$spt-close-2x-name: 'spt-close@2x';
+$spt-close-2x-x: 54px;
+$spt-close-2x-y: 54px;
+$spt-close-2x-offset-x: -54px;
+$spt-close-2x-offset-y: -54px;
+$spt-close-2x-width: 36px;
+$spt-close-2x-height: 36px;
+$spt-close-2x-total-width: 98px;
+$spt-close-2x-total-height: 98px;
+$spt-close-2x-image: '../images/sprites@2x.png';
+$spt-close-2x: (54px, 54px, -54px, -54px, 36px, 36px, 98px, 98px, '../images/sprites@2x.png', 'spt-close@2x');
+$spt-error-2x-name: 'spt-error@2x';
+$spt-error-2x-x: 0;
+$spt-error-2x-y: 0;
+$spt-error-2x-offset-x: 0;
+$spt-error-2x-offset-y: 0;
+$spt-error-2x-width: 44px;
+$spt-error-2x-height: 44px;
+$spt-error-2x-total-width: 98px;
+$spt-error-2x-total-height: 98px;
+$spt-error-2x-image: '../images/sprites@2x.png';
+$spt-error-2x: (0, 0, 0, 0, 44px, 44px, 98px, 98px, '../images/sprites@2x.png', 'spt-error@2x');
+$spt-pass-2x-name: 'spt-pass@2x';
+$spt-pass-2x-x: 54px;
+$spt-pass-2x-y: 0;
+$spt-pass-2x-offset-x: -54px;
+$spt-pass-2x-offset-y: 0;
+$spt-pass-2x-width: 44px;
+$spt-pass-2x-height: 44px;
+$spt-pass-2x-total-width: 98px;
+$spt-pass-2x-total-height: 98px;
+$spt-pass-2x-image: '../images/sprites@2x.png';
+$spt-pass-2x: (54px, 0, -54px, 0, 44px, 44px, 98px, 98px, '../images/sprites@2x.png', 'spt-pass@2x');
+$spt-warning-2x-name: 'spt-warning@2x';
+$spt-warning-2x-x: 0;
+$spt-warning-2x-y: 54px;
+$spt-warning-2x-offset-x: 0;
+$spt-warning-2x-offset-y: -54px;
+$spt-warning-2x-width: 44px;
+$spt-warning-2x-height: 44px;
+$spt-warning-2x-total-width: 98px;
+$spt-warning-2x-total-height: 98px;
+$spt-warning-2x-image: '../images/sprites@2x.png';
+$spt-warning-2x: (0, 54px, 0, -54px, 44px, 44px, 98px, 98px, '../images/sprites@2x.png', 'spt-warning@2x');
+$ssh-sprites-2x-width: 98px;
+$ssh-sprites-2x-height: 98px;
+$ssh-sprites-2x-image: '../images/sprites@2x.png';
+$ssh-sprites-2x-sprites: ($spt-close-2x, $spt-error-2x, $spt-pass-2x, $spt-warning-2x);
+$ssh-sprites-2x: (98px, 98px, '../images/sprites@2x.png', $ssh-sprites-2x-sprites);
+
+@mixin ssh-sprites-2x {
+
+  %ssh-sprites {
+    background-image: url(nth($ssh-sprites-2x, 3));
+    background-size: #{nth($ssh-sprites, 1)} #{nth($ssh-sprites, 2)};
+  }
+
+}
+
+@mixin ssh-sprites-2x-rel {
+
+  %ssh-sprites {
+    background-image: url(nth($ssh-sprites-2x, 3));
+ }
+
+}
+
+
+
+// sprites@3x.png
+
+$spt-close-3x-name: 'spt-close@3x';
+$spt-close-3x-x: 81px;
+$spt-close-3x-y: 81px;
+$spt-close-3x-offset-x: -81px;
+$spt-close-3x-offset-y: -81px;
+$spt-close-3x-width: 54px;
+$spt-close-3x-height: 54px;
+$spt-close-3x-total-width: 147px;
+$spt-close-3x-total-height: 147px;
+$spt-close-3x-image: '../images/sprites@3x.png';
+$spt-close-3x: (81px, 81px, -81px, -81px, 54px, 54px, 147px, 147px, '../images/sprites@3x.png', 'spt-close@3x');
+$spt-error-3x-name: 'spt-error@3x';
+$spt-error-3x-x: 0;
+$spt-error-3x-y: 0;
+$spt-error-3x-offset-x: 0;
+$spt-error-3x-offset-y: 0;
+$spt-error-3x-width: 66px;
+$spt-error-3x-height: 66px;
+$spt-error-3x-total-width: 147px;
+$spt-error-3x-total-height: 147px;
+$spt-error-3x-image: '../images/sprites@3x.png';
+$spt-error-3x: (0, 0, 0, 0, 66px, 66px, 147px, 147px, '../images/sprites@3x.png', 'spt-error@3x');
+$spt-pass-3x-name: 'spt-pass@3x';
+$spt-pass-3x-x: 81px;
+$spt-pass-3x-y: 0;
+$spt-pass-3x-offset-x: -81px;
+$spt-pass-3x-offset-y: 0;
+$spt-pass-3x-width: 66px;
+$spt-pass-3x-height: 66px;
+$spt-pass-3x-total-width: 147px;
+$spt-pass-3x-total-height: 147px;
+$spt-pass-3x-image: '../images/sprites@3x.png';
+$spt-pass-3x: (81px, 0, -81px, 0, 66px, 66px, 147px, 147px, '../images/sprites@3x.png', 'spt-pass@3x');
+$spt-warning-3x-name: 'spt-warning@3x';
+$spt-warning-3x-x: 0;
+$spt-warning-3x-y: 81px;
+$spt-warning-3x-offset-x: 0;
+$spt-warning-3x-offset-y: -81px;
+$spt-warning-3x-width: 66px;
+$spt-warning-3x-height: 66px;
+$spt-warning-3x-total-width: 147px;
+$spt-warning-3x-total-height: 147px;
+$spt-warning-3x-image: '../images/sprites@3x.png';
+$spt-warning-3x: (0, 81px, 0, -81px, 66px, 66px, 147px, 147px, '../images/sprites@3x.png', 'spt-warning@3x');
+$ssh-sprites-3x-width: 147px;
+$ssh-sprites-3x-height: 147px;
+$ssh-sprites-3x-image: '../images/sprites@3x.png';
+$ssh-sprites-3x-sprites: ($spt-close-3x, $spt-error-3x, $spt-pass-3x, $spt-warning-3x);
+$ssh-sprites-3x: (147px, 147px, '../images/sprites@3x.png', $ssh-sprites-3x-sprites);
+
+@mixin ssh-sprites-3x {
+
+  %ssh-sprites {
+    background-image: url(nth($ssh-sprites-3x, 3));
+    background-size: #{nth($ssh-sprites, 1)} #{nth($ssh-sprites, 2)};
+  }
+
+}
+
+@mixin ssh-sprites-3x-rel {
+
+  %ssh-sprites {
+    background-image: url(nth($ssh-sprites-3x, 3));
+ }
+
+}

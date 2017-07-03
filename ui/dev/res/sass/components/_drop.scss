@@ -1,0 +1,21 @@
+/* Drop */
+
+$drop-borderWidth: 2px;
+$drop-borderColor: rgba($blue-dark, .25);
+
+.drop {
+  position: absolute;
+  top: calc(#{$gap} + .75em);
+  right: $gap;
+  bottom: $gap;
+  left: $gap;
+  border: $drop-borderWidth dashed $drop-borderColor;
+  pointer-events: none;
+}
+
+.dropFiles {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+}

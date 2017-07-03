@@ -1,0 +1,15 @@
+/* Side */
+
+$ui-color: $white;
+$ui-background: $blue-dark;
+
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  box-sizing: border-box;
+  width: 35%;
+  max-width: 500px;
+  color: $ui-color;
+  background: $ui-background;
+}

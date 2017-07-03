@@ -1,0 +1,19 @@
+/* CBRN */
+
+$cbrn-color: $blue-dark;
+$cbrn-background: $white;
+$cbrn-fontSize: 25px;
+
+.cbrn {
+  @include tx-layer(over);
+  @include tx-font-size($cbrn-fontSize, none);
+  position: absolute;
+  top: $gap;
+  left: ($gap * 3);
+  padding: 0 $gap;
+  margin: 0;
+  color: $cbrn-color;
+  background: $cbrn-background;
+  font-style: italic;
+  line-height: 1;
+}
