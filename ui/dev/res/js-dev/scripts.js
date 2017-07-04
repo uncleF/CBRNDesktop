@@ -6,6 +6,10 @@ utilities.init('app');
 
 /* Components */
 
-const panel = require('panel');
+const buttons = require('buttons');
+const drop = require('drop');
+const list = require('list');
 
-panel();
+buttons();
+drop();
+list();

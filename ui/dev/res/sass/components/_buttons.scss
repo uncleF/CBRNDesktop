@@ -3,6 +3,7 @@
 .buttons {
   display: flex;
   padding: $gap;
+  font-weight: 100;
 
   &:before {
     @include tx-pseudo(relative);
@@ -61,6 +62,7 @@ $cancel-background: $red;
     bottom: 0;
     left: 0;
     opacity: .5;
+    transition: inherit;
   }
 
   &:hover,
@@ -72,11 +74,25 @@ $cancel-background: $red;
 
   }
 
-  &[disabled] {
+}
+
+.button {
+
+  &-is-disabled {
     opacity: .25;
+    pointer-events: none;
 
     &:before {
       background: $rename-disabled-background;
+    }
+
+    &:hover,
+    &:active {
+
+      &:before {
+        opacity: .5;
+      }
+
     }
 
   }

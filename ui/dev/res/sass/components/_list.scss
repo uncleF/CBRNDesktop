@@ -6,6 +6,7 @@
   overflow: auto;
   padding: 0;
   margin: 0;
+  font-weight: 100;
   list-style: none;
 }
 
@@ -25,17 +26,29 @@ $listItemAlternate-background: rgba($white, .075);
   &:before {
     @include tx-pseudo(relative, inline-block);
     @include tx-sprite-block($spt-pass);
+    z-index: 1;
     top: .05em;
+    left: -.075em;
     content: counter(list);
     counter-increment: list;
-    border-radius: 50%;
     margin: 0 $gap 0 0;
     color: $listItemBullet-color;
-    background: $listItemBullet-background;
     font-weight: bold;
     text-align: center;
+    letter-spacing: -.15em;
     line-height: txf-sprite-height($spt-pass);
     vertical-align: top;
+  }
+
+  &:after {
+    @include tx-pseudo;
+    @include tx-sprite-block($spt-pass);
+    z-index: 0;
+    top: $gap;
+    left: $gap;
+    border-radius: 50%;
+    margin: .05em 0 0;
+    background: $listItemBullet-background;
   }
 
   &-is-pass {
@@ -72,14 +85,4 @@ $listItemAlternate-background: rgba($white, .075);
     background: $listItemAlternate-background;
   }
 
-}
-
-.removeItem {
-  @include tx-sprite($spt-close, true, true);
-  position: absolute;
-  top: 50%;
-  right: $gap;
-  display: block;
-  overflow: hidden;
-  margin: (txf-sprite-height($spt-close) / -2) 0 0;
 }

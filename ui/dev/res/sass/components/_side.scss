@@ -6,10 +6,8 @@ $ui-background: $blue-dark;
 .side {
   display: flex;
   flex-direction: column;
-  flex-grow: 0;
+  flex-grow: 1;
   box-sizing: border-box;
-  width: 35%;
-  max-width: 500px;
   color: $ui-color;
   background: $ui-background;
 }

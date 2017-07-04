@@ -6,14 +6,14 @@ function app() {
   return object;
 }
 
-function getEvent(key) {
+function eventName(key) {
   return eventNames[key];
 }
 
 function trigger(key, data) {
   const event = document.createEvent('UIEvent');
   event.data = data;
-  event.initEvent(getEvent(key), false, false);
+  event.initEvent(eventName(key), false, false);
   object.dispatchEvent(event);
 }
 
@@ -23,4 +23,5 @@ function init(id) {
 
 exports.init = init;
 exports.app = app;
+exports.eventName = eventName;
 exports.trigger = trigger;
