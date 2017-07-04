@@ -1,0 +1,13 @@
+/* Side */
+
+$ui-color: $white;
+$ui-background: $blue-dark;
+
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+  color: $ui-color;
+  background: $ui-background;
+}

@@ -1,0 +1,54 @@
+{
+	"color_variables_files":
+	[
+		"/Users/uncleFucka/Projects/CBRNDesktopUI/dev/res/sass/project/_project.scss",
+		"D:/Projects/Projects/CBRNDesktopUI/dev/res/sass/project/_project.scss"
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.zip",
+				"*.sublime-project"
+			],
+			"folder_exclude_patterns":
+			[
+				"build",
+				"design",
+				"dev",
+				"docs",
+				"meta",
+				"node_modules",
+				"sources",
+				"tests"
+			],
+			"name": "CBRNDesktopUI: Project",
+			"path": "."
+		},
+		{
+			"name": "CBRNDesktopUI: HTML",
+			"path": "dev/res/templates"
+		},
+		{
+			"name": "CBRNDesktopUI: Sass",
+			"path": "dev/res/sass"
+		},
+		{
+			"name": "CBRNDesktopUI: JavaScript",
+			"path": "dev/res/js-dev"
+		},
+		{
+			"name": "CBRNDesktopUI: Tests",
+			"path": "tests"
+		},
+		{
+			"name": "CBRNDesktopUI: Meta",
+			"path": "meta"
+		},
+		{
+			"name": "CBRNDesktopUI: Docs",
+			"path": "docs"
+		}
+	]
+}

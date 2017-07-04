@@ -1,0 +1,64 @@
+/* Drop */
+
+$drop-color: $white;
+$drop-background: rgba($black, .75);
+$drop-opacity: .5;
+
+$dropInner-background: $blue-dark;
+
+.drop {
+  @include tx-layer(over);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: $drop-color;
+  background: $drop-background;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: $UITransitionDefault;
+
+  &:before {
+    @include tx-pseudo;
+    top: $gap;
+    right: $gap;
+    bottom: $gap;
+    left: $gap;
+    border-radius: $gap;
+    background: $dropInner-background;
+  }
+
+  &:after {
+    @include tx-pseudo;
+    @include tx-sprite($spt-drop, true);
+    @include tx-sprite-shift($spt-drop);
+    top: 50%;
+    left: 50%;
+    opacity: $drop-opacity;
+  }
+
+  &-is-active {
+    opacity: 1;
+  }
+
+}
+
+.dropMessage {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  margin: (txf-sprite-height($spt-drop) / 2) 0 0;
+  font-weight: 100;
+  line-height: 4.5em;
+  opacity: $drop-opacity;
+}
+
+.dropFiles {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  visibility: hidden;
+}

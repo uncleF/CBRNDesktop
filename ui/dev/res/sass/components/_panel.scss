@@ -1,0 +1,21 @@
+/* Panel */
+
+.panel {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: $gap;
+}
+
+%panelButtons {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  text-decoration: none;
+}
+
+.clear {
+  @extend %panelButtons;
+  @include tx-sprite($spt-close, true, true);
+  position: relative;
+}

@@ -1,0 +1,88 @@
+/* List */
+
+.list {
+  counter-reset: list;
+  flex-grow: 1;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  list-style: none;
+}
+
+$listItemBullet-color: $blue-dark;
+$listItemBullet-background: $white;
+
+$listItemAlternate-background: rgba($white, .075);
+
+.listItem {
+  position: relative;
+  overflow: hidden;
+  padding: $gap;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &:before {
+    @include tx-pseudo(relative, inline-block);
+    @include tx-sprite-block($spt-pass);
+    z-index: 1;
+    top: .05em;
+    left: -.075em;
+    content: counter(list);
+    counter-increment: list;
+    margin: 0 $gap 0 0;
+    color: $listItemBullet-color;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -.15em;
+    line-height: txf-sprite-height($spt-pass);
+    vertical-align: top;
+  }
+
+  &:after {
+    @include tx-pseudo;
+    @include tx-sprite-block($spt-pass);
+    z-index: 0;
+    top: $gap;
+    left: $gap;
+    border-radius: 50%;
+    margin: .05em 0 0;
+    background: $listItemBullet-background;
+  }
+
+  &-is-pass {
+
+    &:before {
+      @include tx-sprite-image($spt-pass);
+      @include tx-sprite-position($spt-pass);
+      content: '';
+    }
+
+  }
+
+  &-is-warning {
+
+    &:before {
+      @include tx-sprite-image($spt-warning);
+      @include tx-sprite-position($spt-warning);
+      content: '';
+    }
+
+  }
+
+  &-is-error {
+
+    &:before {
+      @include tx-sprite-image($spt-error);
+      @include tx-sprite-position($spt-error);
+      content: '';
+    }
+
+  }
+
+  &:nth-child(odd) {
+    background: $listItemAlternate-background;
+  }
+
+}

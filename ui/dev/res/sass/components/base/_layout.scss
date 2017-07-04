@@ -1,0 +1,29 @@
+/* Layout */
+
+// sass-lint:disable no-vendor-prefixes
+
+html {
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+}
+
+// sass-lint:enable no-vendor-prefixes
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  background: $background;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  height: inherit;
+}
+
+
+
+/* Phone Layout */
+
+@import '_layout-phone';
